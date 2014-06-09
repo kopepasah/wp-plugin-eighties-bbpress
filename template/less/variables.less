@@ -1,0 +1,70 @@
+// Base Colors
+// Color scheme inspired Base 16 Eighties by Chris Kempson
+// http://chriskempson.github.io/base16/#eighties
+@base-00: #2d2d2d;  // Base 00 - Black
+@base-01: #f2777a;  // Base 08 - Red
+@base-02: #99cc99;  // Base 0B - Green
+@base-03: #ffcc66;  // Base 0A - Yellow
+@base-04: #6699cc;  // Base 0D - Blue
+@base-05: #cc99cc;  // Base 0E - Magenta
+@base-06: #66cccc;  // Base 0C - Cyan
+@base-07: #d3d0c8;  // Base 05 - White
+@base-08: #747369;  // Base 03 - Bright Black
+@base-09: @base-01; // Base 08 - Bright Red
+@base-10: @base-02; // Base 0B - Bright Green
+@base-11: @base-03; // Base 0A - Bright Yellow
+@base-12: @base-04; // Base 0D - Bright Blue
+@base-13: @base-05; // Base 0E - Bright Magenta
+@base-14: @base-06; // Base 0C - Bright Cyan
+@base-15: #f2f0ec;  // Base 07 - Bright White
+@base-16: #f99157;  // Base 09
+@base-17: #d27b53;  // Base 0F
+@base-18: #393939;  // Base 01
+@base-19: #515151;  // Base 02
+@base-20: #a09f93;  // Base 04
+@base-21: #e8e6df;  // Base 06
+
+// Color Pallet
+@dark:    @base-00;
+@red:     @base-01;
+@green:   @base-02;
+@yellow:  @base-03;
+@blue:    @base-04;
+@magenta: @base-05;
+@cyan:    @base-06;
+@light:   lighten( @base-00, 75% );
+
+// Named Colors
+@primary:   @red;
+@secondary: @green;
+@success:   @green;
+@warning:   @yellow;
+@danger:    @red;
+@info:      @blue;
+
+// Links
+//@link-color:              @primary;
+//@link-color-hover:        @secondary;
+
+// Typography
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          18px;
+@line-height-base:        1.75;
+
+@headings-font-family:    'Varela Round', sans-serif;
+@headings-font-weight:    400;
+
+// Forms
+@input-color-placeholder: lighten( @dark, 25% );
+
+// Structure
+@max-width: 1200px;
+@spacing-base: 3em;
+
+// Grid
+@grid-columns:          12;
+@grid-column-padding:   3em;
