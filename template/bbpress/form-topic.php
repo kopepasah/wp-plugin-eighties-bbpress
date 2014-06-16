@@ -14,7 +14,15 @@
 
 <?php if ( bbp_is_topic_edit() ) : ?>
 
-	<?php bbp_topic_tag_list( bbp_get_topic_id() ); ?>
+	<?php
+		$args = array(
+			'before' => '<div class="bbp-topic-tags">',
+			'sep'    => '',
+			'after'  => '</div>'
+		);
+
+		bbp_topic_tag_list( bbp_get_topic_id(), $args );
+	?>
 
 	<?php bbp_single_topic_description( array( 'topic_id' => bbp_get_topic_id() ) ); ?>
 

@@ -6,6 +6,9 @@
 
 @import '../less/notices';
 
+@import '../less/tags';
+@import '../less/toggles';
+
 /** =Topic and reply content
 -------------------------------------------------------------- */
 
@@ -140,56 +143,6 @@
 	text-align: right;
 }
 
-/** =Breadcrumb and Tags
--------------------------------------------------------------- */
-
-div.bbp-breadcrumb {
-	float: left;
-}
-
-div.bbp-breadcrumb,
-div.bbp-topic-tags {
-	font-size: 12px;
-}
-
-#bbpress-forums div.bbp-breadcrumb p,
-#bbpress-forums div.bbp-topic-tags p {
-	margin-bottom: 10px
-}
-
-#bbpress-forums div.bbp-topic-tags {
-	float: right;
-}
-
-#bbp-topic-hot-tags {
-	clear: both;
-}
-
-/** =Search
--------------------------------------------------------------- */
-
-#bbpress-forums #bbp-search-form {
-	clear: left;
-}
-
-	#bbpress-forums #bbp-search-form .hidden {
-		height: 0;
-		width: 0;
-		overflow: hidden;
-		position: absolute;
-		background: none;
-		left: -999em;
-	}
-
-	#bbpress-forums #bbp-search-form #bbp_search {
-		display: inline-block;
-		width: auto;
-	}
-
-#bbpress-forums div.bbp-search-form {
-	float: right;
-}
-
 /** =Admin Links
 -------------------------------------------------------------- */
 
@@ -223,66 +176,6 @@ td.bbp-topic-counts {
 	color: #ccc;
 }
 
-/** =Toggles
--------------------------------------------------------------- */
-
-.bbp-row-actions #favorite-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-row-actions #favorite-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-row-actions #favorite-toggle span.is-favorite a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-row-actions #favorite-toggle span.is-favorite a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
-
-.bbp-row-actions #subscription-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-row-actions #subscription-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-row-actions #subscription-toggle span.is-subscribed a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-row-actions #subscription-toggle span.is-subscribed a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
-
-#bbpress-forums .bbp-forum-info .bbp-forum-content,
-#bbpress-forums p.bbp-topic-meta {
-	font-size: 11px;
-	margin: 5px 0 5px;
-	padding: 0;
-	word-wrap: break-word;
-}
 
 #bbpress-forums p.bbp-topic-meta span {
 	white-space: nowrap;

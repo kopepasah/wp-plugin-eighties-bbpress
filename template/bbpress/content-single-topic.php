@@ -16,7 +16,15 @@
 
 	<?php else : ?>
 
-		<?php bbp_topic_tag_list(); ?>
+		<?php
+			$args = array(
+				'before' => '<div class="bbp-topic-tags">',
+				'sep'    => '',
+				'after'  => '</div>'
+			);
+
+			bbp_topic_tag_list( bbp_get_topic_id(), $args );
+		?>
 
 		<?php bbp_single_topic_description(); ?>
 

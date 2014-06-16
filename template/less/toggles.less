@@ -1,0 +1,90 @@
+/** -----------------------------------------------------:[ Toggles ]:---------- */
+.bbp-row-actions #favorite-toggle a {
+	text-decoration: none;
+	padding: 0 3px 1px;
+	color: #7c7;
+	border: 1px solid #aca;
+	background-color: #dfd;
+	font-weight: bold;
+	font-size: 13px;
+	}
+	.bbp-row-actions #favorite-toggle a:hover {
+		color: #5a5;
+		border-color: #7c7;
+		background-color: #beb;
+	}
+	.bbp-row-actions #favorite-toggle span.is-favorite a {
+		color: #faa;
+		border: 1px solid #faa;
+		background-color: #fee;
+		}
+		.bbp-row-actions #favorite-toggle span.is-favorite a:hover {
+			color: #c88;
+			border-color: #c88;
+			background-color: #fdd;
+		}
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content,
+#bbpress-forums p.bbp-topic-meta {
+	font-size: 11px;
+	margin: 5px 0 5px;
+	padding: 0;
+	word-wrap: break-word;
+}
+
+#bbpress-forums p.bbp-topic-meta span {
+	white-space: nowrap;
+}
+
+
+/** ----------------------------------------:[ Subscription Toggle ]:--- */
+#subscription-toggle {
+	display: block;]
+	margin-top: -4em;
+	margin-bottom: @spacing-base;
+	text-align: center;
+	a {
+		padding: 5px 8px;
+		background: lighten( @base-19, 5% );
+		border-radius: 2px;
+		color: #FFF;
+		font-size: .9em;
+		.transition( ~'background 200ms linear' );
+		&:hover {
+			background: @green;
+		}
+	}
+	.is-subscribed {
+		a {
+			&:hover {
+				background: @red;
+			}
+		}
+	}
+}
+
+/** ---:[ User Subscription Page ]:--- */
+.bbp-row-actions #subscription-toggle a {
+	text-decoration: none;
+	padding: 0 3px 1px;
+	color: #7c7;
+	border: 1px solid #aca;
+	background-color: #dfd;
+	font-weight: bold;
+	font-size: 13px;
+	}
+	.bbp-row-actions #subscription-toggle a:hover {
+		color: #5a5;
+		border-color: #7c7;
+		background-color: #beb;
+	}
+	.bbp-row-actions #subscription-toggle span.is-subscribed a {
+		color: #faa;
+		border: 1px solid #faa;
+		background-color: #fee;
+		}
+		.bbp-row-actions #subscription-toggle span.is-subscribed a:hover {
+			color: #c88;
+			border-color: #c88;
+			background-color: #fdd;
+		}
