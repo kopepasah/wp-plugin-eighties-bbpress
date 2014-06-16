@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Statistics Content Part
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 // Get the statistics

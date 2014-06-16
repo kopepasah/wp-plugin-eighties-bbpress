@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Single Topic Content Part
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

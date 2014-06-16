@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Move Reply
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

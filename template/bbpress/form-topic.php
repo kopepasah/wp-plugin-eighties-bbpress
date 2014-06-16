@@ -1,10 +1,8 @@
 <?php
-
 /**
  * New/Edit Topic
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

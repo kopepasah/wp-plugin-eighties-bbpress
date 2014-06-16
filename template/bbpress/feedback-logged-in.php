@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Logged In Feedback Part
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

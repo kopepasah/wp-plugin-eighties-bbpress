@@ -1,10 +1,8 @@
 <?php
-
 /**
  * User Lost Password Form
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

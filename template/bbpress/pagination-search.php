@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Pagination for pages of search results 
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Replies Loop
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

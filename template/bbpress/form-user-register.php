@@ -1,10 +1,8 @@
 <?php
-
 /**
  * User Registration Form
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

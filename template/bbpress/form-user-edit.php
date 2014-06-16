@@ -1,10 +1,8 @@
 <?php
-
 /**
  * bbPress User Profile Edit Part
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

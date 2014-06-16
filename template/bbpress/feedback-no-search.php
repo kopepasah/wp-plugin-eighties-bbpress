@@ -1,10 +1,8 @@
 <?php
-
 /**
  * No Search Results Feedback Part
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

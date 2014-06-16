@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Pagination for pages of topics (when viewing a forum)
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>

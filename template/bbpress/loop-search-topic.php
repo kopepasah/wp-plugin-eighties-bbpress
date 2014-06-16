@@ -1,10 +1,8 @@
 <?php
-
 /**
  * Search Loop - Single Topic
  *
- * @package bbPress
- * @subpackage Theme
+ * @package Eighties Add-on - bbPress
  */
 
 ?>
