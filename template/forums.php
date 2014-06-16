@@ -17,9 +17,25 @@ get_header(); ?>
 					<?php echo get_the_title( get_the_ID() ); ?>
 				</h1>
 
-				<?php if ( is_singular( 'forum' ) && bbp_get_forum_content() ) : ?>
+				<?php if ( is_singular( 'forum' ) ) : ?>
 					<div class="page-description">
-						<?php bbp_forum_content(); ?>
+						<?php if ( bbp_get_forum_content() ) : ?>
+							<?php bbp_forum_content(); ?>
+						<?php endif; ?>
+
+						<?php if ( bbp_get_single_forum_description() ) : ?>
+							<div class="page-description">
+								<?php
+									$args = array(
+										'before'    => '',
+										'after'     => '',
+										'size'      => 0
+									);
+
+									bbp_single_forum_description( $args );
+								?>
+							</div>
+						<?php endif; ?>
 					</div>
 				<?php elseif ( is_singular( 'topic' ) && bbp_get_single_topic_description() ) : ?>
 					<div class="page-description">
