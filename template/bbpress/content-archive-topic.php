@@ -20,9 +20,6 @@
 		</div>
 
 	<?php endif; ?>
-
-	<?php bbp_breadcrumb(); ?>
-
 	<?php if ( bbp_is_topic_tag() ) bbp_topic_tag_description(); ?>
 
 	<?php do_action( 'bbp_template_before_topics_index' ); ?>
