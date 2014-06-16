@@ -17,6 +17,12 @@ get_header(); ?>
 					<?php echo get_the_title( get_the_ID() ); ?>
 				</h1>
 
+				<?php if ( is_singular( 'forum' ) && bbp_get_forum_content() ) : ?>
+					<div class="page-description">
+						<?php bbp_forum_content(); ?>
+					</div>
+				<?php endif; ?>
+
 				<?php if ( bbp_allow_search() && ( is_post_type_archive( 'forum' ) || is_post_type_archive( 'topic' ) ) ) : ?>
 					<div class="bbp-search-form">
 						<?php bbp_get_template_part( 'form', 'search' ); ?>
