@@ -12,6 +12,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php echo get_the_title( get_the_ID() ); ?>
+				</h1>
+
+				<?php if ( bbp_allow_search() && ( is_post_type_archive( 'forum' ) || is_post_type_archive( 'topic' ) ) ) : ?>
+					<div class="bbp-search-form">
+						<?php bbp_get_template_part( 'form', 'search' ); ?>
+					</div>
+				<?php endif; ?>
+			</header><!-- .page-header -->
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
