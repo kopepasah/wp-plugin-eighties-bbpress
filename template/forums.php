@@ -21,6 +21,18 @@ get_header(); ?>
 					<div class="page-description">
 						<?php bbp_forum_content(); ?>
 					</div>
+				<?php elseif ( is_singular( 'topic' ) && bbp_get_single_topic_description() ) : ?>
+					<div class="page-description">
+						<?php
+							$args = array(
+								'before'    => '',
+								'after'     => '',
+								'size'      => 0
+							);
+
+							bbp_single_topic_description( $args );
+						?>
+					</div>
 				<?php endif; ?>
 
 				<?php if ( bbp_allow_search() && ( is_post_type_archive( 'forum' ) || is_post_type_archive( 'topic' ) ) ) : ?>

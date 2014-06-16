@@ -6,6 +6,19 @@
 /** -----------------------------------------------------:[ Reset ]:---------- */
 .js {
 	.bbpress {
+		.page {
+			&-description {
+				a {
+					color: #FFF;
+					border-bottom: 1px solid #FFF;
+					.transition( ~'background-color 200ms linear, border-color 200ms linear' );
+					&:hover {
+						background-color: @primary;
+						border-color: transparent;
+					}
+				}
+			}
+		}
 		.hentry {
 			> [class^="entry-"] {
 				/*
