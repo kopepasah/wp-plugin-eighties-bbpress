@@ -1,0 +1,52 @@
+/** -----------------------------------------------------:[ Pagination ]:---------- */
+.bbp-pagination {
+	float: left;
+	width: 100%;
+	margin-bottom: @spacing-base;
+	font-size: .9em;
+	&-count {
+		float: left;
+		padding: .5em .8em;
+		border: 1px solid @blue;
+		border-radius: 2px;
+		color: @blue;
+	}
+	&-links {
+		float: right;
+		list-style: none;
+		display: inline;
+		a {
+			.transition( ~'background-color 200ms linear, color 200ms linear' );
+			&:hover {
+				background-color: @blue;
+				color: #FFF;
+			}
+		}
+		a,
+		.current,
+		.dots {
+			display: block;
+			float: left;
+			margin-left: .5em;
+			padding: .5em 1em;
+			color: @blue;
+		}
+		a,
+		.current {
+			border: 1px solid @blue;
+			border-radius: 2px;
+		}
+		.current {
+			background-color: @blue;
+			color: #FFF;
+		}
+		.prev,
+		.next {
+			border-color: transparent;
+			&:hover {
+				color: darken( @blue, 20% );
+				background-color: transparent;
+			}
+		}
+	}
+}

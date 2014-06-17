@@ -32,3 +32,18 @@ function eighties_bbp_jetpack_remove_infinite_scroll() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'eighties_bbp_jetpack_remove_infinite_scroll' );
+
+/**
+ * Modify the pagination links to use Font Awesome
+ * icons.
+ *
+ * @since 1.0.0
+*/
+function eighties_bbp_replies_topic_pagination_icons( $args ) {
+	$args['prev_text'] = is_rtl() ? '<i class="fa fa-chevron-right"></i>' : '<i class="fa fa-chevron-left"></i>';
+	$args['next_text'] = is_rtl() ? '<i class="fa fa-chevron-left"></i>' : '<i class="fa fa-chevron-right"></i>';
+
+	return $args;
+}
+add_filter( 'bbp_replies_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
+add_filter( 'bbp_topic_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
