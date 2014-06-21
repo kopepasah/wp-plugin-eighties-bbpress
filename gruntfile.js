@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 
 	// Load tasks
 	grunt.loadNpmTasks( 'grunt-contrib-less' );
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
 	// Register tasks
 	grunt.registerTask( 'default', [
