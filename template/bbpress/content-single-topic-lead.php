@@ -9,7 +9,7 @@
 
 <?php do_action( 'bbp_template_before_lead_topic' ); ?>
 
-<ul id="bbp-topic-<?php bbp_topic_id(); ?>-lead" class="bbp-lead-topic">
+<ul id="bbp-topic-<?php bbp_topic_id(); ?>-lead" class="bbp-lead-topic bbp-top-list">
 
 	<li class="bbp-header">
 

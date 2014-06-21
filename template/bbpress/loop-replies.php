@@ -9,7 +9,7 @@
 
 <?php do_action( 'bbp_template_before_replies_loop' ); ?>
 
-<ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies">
+<ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies bbp-top-list">
 
 	<li class="bbp-header">
 

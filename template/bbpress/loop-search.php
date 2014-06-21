@@ -9,7 +9,7 @@
 
 <?php do_action( 'bbp_template_before_search_results_loop' ); ?>
 
-<ul id="bbp-search-results" class="forums bbp-search-results">
+<ul id="bbp-search-results" class="forums bbp-search-results bbp-top-list">
 
 	<li class="bbp-header">
 
