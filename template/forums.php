@@ -22,32 +22,6 @@ get_header(); ?>
 						<?php if ( bbp_get_forum_content() ) : ?>
 							<?php bbp_forum_content(); ?>
 						<?php endif; ?>
-
-						<?php if ( bbp_get_single_forum_description() ) : ?>
-							<div class="page-description">
-								<?php
-									$args = array(
-										'before'    => '',
-										'after'     => '',
-										'size'      => 0
-									);
-
-									bbp_single_forum_description( $args );
-								?>
-							</div>
-						<?php endif; ?>
-					</div>
-				<?php elseif ( is_singular( 'topic' ) && bbp_get_single_topic_description() ) : ?>
-					<div class="page-description">
-						<?php
-							$args = array(
-								'before'    => '',
-								'after'     => '',
-								'size'      => 0
-							);
-
-							bbp_single_topic_description( $args );
-						?>
 					</div>
 				<?php endif; ?>
 
@@ -59,13 +33,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-## -->
-
+				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
