@@ -13,11 +13,17 @@
 
 	<li class="bbp-header">
 
-		<ul class="forum-titles">
+		<ul class="item-names">
 			<li class="bbp-topic-title"><?php _e( 'Topic', 'bbpress' ); ?></li>
-			<li class="bbp-topic-voice-count"><?php _e( 'Voices', 'bbpress' ); ?></li>
-			<li class="bbp-topic-reply-count"><?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
-			<li class="bbp-topic-freshness"><?php _e( 'Freshness', 'bbpress' ); ?></li>
+			<?php if ( is_post_type_archive( 'topic' ) ) : ?>
+				<li class="bbp-topic-forum"><?php _e( 'Forum', 'bbpress' ); ?></li>
+			<?php endif; ?>
+			<li class="bbp-topic-voices"><?php _e( 'Voices', 'bbpress' ); ?></li>
+			<li class="bbp-topic-replies"><?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
+			<li class="bbp-topic-activity"><?php _e( 'Latest Activity', 'bbpress' ); ?></li>
+			<?php if ( ! is_post_type_archive( 'topic' ) ) : ?>
+				<li class="bbp-topic-author"><?php _e( 'Poster', 'bbpress' ); ?></li>
+			<?php endif; ?>
 		</ul>
 
 	</li>
@@ -29,16 +35,6 @@
 			<?php bbp_get_template_part( 'loop', 'single-topic' ); ?>
 
 		<?php endwhile; ?>
-
-	</li>
-
-	<li class="bbp-footer">
-
-		<div class="tr">
-			<p>
-				<span class="td colspan<?php echo ( bbp_is_user_home() && ( bbp_is_favorites() || bbp_is_subscriptions() ) ) ? '5' : '4'; ?>">&nbsp;</span>
-			</p>
-		</div><!-- .tr -->
 
 	</li>
 

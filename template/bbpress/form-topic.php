@@ -7,7 +7,7 @@
 
 ?>
 
-<?php if ( !bbp_is_single_forum() ) : ?>
+<?php if ( ! bbp_is_single_forum() ) : ?>
 
 <div id="bbpress-forums">
 <?php endif; ?>
@@ -36,17 +36,18 @@
 
 			<?php do_action( 'bbp_theme_before_topic_form' ); ?>
 
-			<fieldset class="bbp-form">
-				<legend>
+			<p class="bbp-form-title">
 
-					<?php
-						if ( bbp_is_topic_edit() )
-							printf( __( 'Now Editing &ldquo;%s&rdquo;', 'bbpress' ), bbp_get_topic_title() );
-						else
-							bbp_is_single_forum() ? printf( __( 'Create New Topic in &ldquo;%s&rdquo;', 'bbpress' ), bbp_get_forum_title() ) : _e( 'Create New Topic', 'bbpress' );
-					?>
+				<?php
+					if ( bbp_is_topic_edit() )
+						printf( __( 'Now Editing &ldquo;%s&rdquo;', 'bbpress' ), bbp_get_topic_title() );
+					else
+						bbp_is_single_forum() ? printf( __( 'Create New Topic in &ldquo;%s&rdquo;', 'bbpress' ), bbp_get_forum_title() ) : _e( 'Create New Topic', 'bbpress' );
+				?>
 
-				</legend>
+			</p>
+
+			<fieldset class="bbp-form bbp-form-main">
 
 				<?php do_action( 'bbp_theme_before_topic_form_notices' ); ?>
 
@@ -54,14 +55,6 @@
 
 					<div class="bbp-template-notice">
 						<p><?php _e( 'This forum is marked as closed to new topics, however your posting capabilities still allow you to do so.', 'bbpress' ); ?></p>
-					</div>
-
-				<?php endif; ?>
-
-				<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
-
-					<div class="bbp-template-notice">
-						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
 					</div>
 
 				<?php endif; ?>
@@ -75,7 +68,7 @@
 					<?php do_action( 'bbp_theme_before_topic_form_title' ); ?>
 
 					<p>
-						<label for="bbp_topic_title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
+						<label for="bbp_topic_title" class="bbp-form-topic-title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
 						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" />
 					</p>
 
@@ -86,6 +79,14 @@
 					<?php bbp_the_content( array( 'context' => 'topic' ) ); ?>
 
 					<?php do_action( 'bbp_theme_after_topic_form_content' ); ?>
+
+					<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
+
+						<div class="bbp-template-notice">
+							<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
+						</div>
+
+					<?php endif; ?>
 
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
@@ -234,7 +235,7 @@
 
 	<div id="no-topic-<?php bbp_topic_id(); ?>" class="bbp-no-topic">
 		<div class="bbp-template-notice">
-			<p><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
+			<p class="error"><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
 		</div>
 	</div>
 
