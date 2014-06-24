@@ -1,12 +1,58 @@
 /** -----------------------------------------------------:[ Forms ]:---------- */
 .bbp-form {
+	label {
+		font-size: .8em;
+		color: lighten( @dark, 50% );
+	}
 	&-title {
+		margin-bottom: @spacing-base;
 		padding: @spacing-base / 3;
 		background: lighten( @base-19, 15% );
 		color: #FFF;
 		text-align: center;
 	}
 	&-main {
+		.max-width( 1200px );
+	}
+	&-topic-title {
+
+	}
+}
+
+/** ----------------------------------------:[ TinyMCE ]:--- */
+.bbp {
+	&-the-content-wrapper {
+		clear: both;
+		margin-bottom: 1em;
+		// The editor has a pretty unique style added.
+		// Instead of overriding that style, let's just
+		// spruce it up and use the same border color.
+		border: 1px solid #dedede;
+		border-radius: 3px;
+	}
+	&-form {
+		.wp-editor-container {
+			input[type="button"] {
+				box-shadow: none !important;
+			}
+		}
+		.wp-editor-area {
+			padding: 1em;
+			font-size: @font-size-base - 2;
+			font-family: @font-family-monospace;
+		}
+		&-info-item {
+			float: left;
+			margin-right: 1.5em;
+		}
+		&-clear {
+			clear: both;
+		}
+	}
+	&-submit-wrapper {
+		margin-bottom: @spacing-base;
+	}
+	&-no-reply {
 		.max-width( 1200px );
 	}
 }

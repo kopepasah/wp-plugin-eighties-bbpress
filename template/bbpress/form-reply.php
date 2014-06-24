@@ -18,10 +18,15 @@
 
 		<form id="new-post" name="new-post" method="post" action="<?php the_permalink(); ?>">
 
+			<p class="bbp-form-title">
+
+				<?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?>
+
+			</p>
+
 			<?php do_action( 'bbp_theme_before_reply_form' ); ?>
 
-			<fieldset class="bbp-form">
-				<legend><?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?></legend>
+			<fieldset class="bbp-form bbp-form-main">
 
 				<?php do_action( 'bbp_theme_before_reply_form_notices' ); ?>
 
@@ -33,13 +38,13 @@
 
 				<?php endif; ?>
 
-				<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
+				<!-- <?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
 
 					<div class="bbp-template-notice">
 						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
 					</div>
 
-				<?php endif; ?>
+				<?php endif; ?> -->
 
 				<?php do_action( 'bbp_template_notices' ); ?>
 
@@ -62,12 +67,12 @@
 
 					<?php endif; ?>
 					
-					<?php if ( bbp_allow_topic_tags() && current_user_can( 'assign_topic_tags' ) ) : ?>
+					<?php if ( bbp_allow_topic_tags() && current_user_can( 'manage_topic_tags' ) ) : ?>
 
 						<?php do_action( 'bbp_theme_before_reply_form_tags' ); ?>
 
 						<p>
-							<label for="bbp_topic_tags"><?php _e( 'Tags:', 'bbpress' ); ?></label><br />
+							<label for="bbp_topic_tags"><?php _e( 'Tags', 'bbpress' ); ?></label><br />
 							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
 						</p>
 
@@ -166,7 +171,7 @@
 
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bbp-template-notice">
-			<p><?php is_user_logged_in() ? _e( 'You cannot reply to this topic.', 'bbpress' ) : _e( 'You must be logged in to reply to this topic.', 'bbpress' ); ?></p>
+			<p class="notice"><?php is_user_logged_in() ? _e( 'You cannot reply to this topic.', 'bbpress' ) : _e( 'You must be logged in to reply to this topic.', 'bbpress' ); ?></p>
 		</div>
 	</div>
 

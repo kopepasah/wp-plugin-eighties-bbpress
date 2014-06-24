@@ -51,7 +51,7 @@
 
 				<?php do_action( 'bbp_theme_before_topic_form_notices' ); ?>
 
-				<?php if ( !bbp_is_topic_edit() && bbp_is_forum_closed() ) : ?>
+				<?php if ( ! bbp_is_topic_edit() && bbp_is_forum_closed() ) : ?>
 
 					<div class="bbp-template-notice">
 						<p><?php _e( 'This forum is marked as closed to new topics, however your posting capabilities still allow you to do so.', 'bbpress' ); ?></p>
@@ -67,10 +67,16 @@
 
 					<?php do_action( 'bbp_theme_before_topic_form_title' ); ?>
 
-					<p>
-						<label for="bbp_topic_title" class="bbp-form-topic-title"><?php printf( __( 'Topic Title (Maximum Length: %d):', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
+					<p class="bbp-form-topic-title">
+						<label for="bbp_topic_title"><?php printf( __( 'Topic Title (%d Characters or Less)', 'bbpress' ), bbp_get_title_max_length() ); ?></label><br />
 						<input type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" />
 					</p>
+
+					<!-- <?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
+
+						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
+
+					<?php endif; ?> -->
 
 					<?php do_action( 'bbp_theme_after_topic_form_title' ); ?>
 
@@ -80,28 +86,11 @@
 
 					<?php do_action( 'bbp_theme_after_topic_form_content' ); ?>
 
-					<?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
-
-						<div class="bbp-template-notice">
-							<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
-						</div>
-
-					<?php endif; ?>
-
-					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
-
-						<p class="form-allowed-tags">
-							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','bbpress' ); ?></label><br />
-							<code><?php bbp_allowed_tags(); ?></code>
-						</p>
-
-					<?php endif; ?>
-
 					<?php if ( bbp_allow_topic_tags() && current_user_can( 'assign_topic_tags' ) ) : ?>
 
 						<?php do_action( 'bbp_theme_before_topic_form_tags' ); ?>
 
-						<p>
+						<p class="bbp-form-info-item">
 							<label for="bbp_topic_tags"><?php _e( 'Topic Tags:', 'bbpress' ); ?></label><br />
 							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
 						</p>
@@ -110,11 +99,11 @@
 
 					<?php endif; ?>
 
-					<?php if ( !bbp_is_single_forum() ) : ?>
+					<?php if ( ! bbp_is_single_forum() ) : ?>
 
 						<?php do_action( 'bbp_theme_before_topic_form_forum' ); ?>
 
-						<p>
+						<p class="bbp-form-info-item">
 							<label for="bbp_forum_id"><?php _e( 'Forum:', 'bbpress' ); ?></label><br />
 							<?php
 								bbp_dropdown( array(
@@ -132,7 +121,7 @@
 
 						<?php do_action( 'bbp_theme_before_topic_form_type' ); ?>
 
-						<p>
+						<p class="bbp-form-info-item">
 
 							<label for="bbp_stick_topic"><?php _e( 'Topic Type:', 'bbpress' ); ?></label><br />
 
@@ -144,7 +133,7 @@
 
 						<?php do_action( 'bbp_theme_before_topic_form_status' ); ?>
 
-						<p>
+						<p class="bbp-form-info-item">
 
 							<label for="bbp_topic_status"><?php _e( 'Topic Status:', 'bbpress' ); ?></label><br />
 
@@ -156,11 +145,31 @@
 
 					<?php endif; ?>
 
+					<?php if ( bbp_allow_revisions() && bbp_is_topic_edit() ) : ?>
+
+						<?php do_action( 'bbp_theme_before_topic_form_revisions' ); ?>
+
+						<fieldset class="bbp-form bbp-form-clear">
+							<legend>
+								<input name="bbp_log_topic_edit" id="bbp_log_topic_edit" type="checkbox" value="1" <?php bbp_form_topic_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
+								<label for="bbp_log_topic_edit"><?php _e( 'Keep a log of this edit:', 'bbpress' ); ?></label><br />
+							</legend>
+
+							<div>
+								<label for="bbp_topic_edit_reason"><?php printf( __( 'Optional reason for editing:', 'bbpress' ), bbp_get_current_user_name() ); ?></label><br />
+								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" />
+							</div>
+						</fieldset>
+
+						<?php do_action( 'bbp_theme_after_topic_form_revisions' ); ?>
+
+					<?php endif; ?>
+
 					<?php if ( bbp_is_subscriptions_active() && !bbp_is_anonymous() && ( !bbp_is_topic_edit() || ( bbp_is_topic_edit() && !bbp_is_topic_anonymous() ) ) ) : ?>
 
 						<?php do_action( 'bbp_theme_before_topic_form_subscriptions' ); ?>
 
-						<p>
+						<p class="bbp-form-clear">
 							<input name="bbp_topic_subscription" id="bbp_topic_subscription" type="checkbox" value="bbp_subscribe" <?php bbp_form_topic_subscribed(); ?> tabindex="<?php bbp_tab_index(); ?>" />
 
 							<?php if ( bbp_is_topic_edit() && ( bbp_get_topic_author_id() !== bbp_get_current_user_id() ) ) : ?>
@@ -175,26 +184,6 @@
 						</p>
 
 						<?php do_action( 'bbp_theme_after_topic_form_subscriptions' ); ?>
-
-					<?php endif; ?>
-
-					<?php if ( bbp_allow_revisions() && bbp_is_topic_edit() ) : ?>
-
-						<?php do_action( 'bbp_theme_before_topic_form_revisions' ); ?>
-
-						<fieldset class="bbp-form">
-							<legend>
-								<input name="bbp_log_topic_edit" id="bbp_log_topic_edit" type="checkbox" value="1" <?php bbp_form_topic_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
-								<label for="bbp_log_topic_edit"><?php _e( 'Keep a log of this edit:', 'bbpress' ); ?></label><br />
-							</legend>
-
-							<div>
-								<label for="bbp_topic_edit_reason"><?php printf( __( 'Optional reason for editing:', 'bbpress' ), bbp_get_current_user_name() ); ?></label><br />
-								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" />
-							</div>
-						</fieldset>
-
-						<?php do_action( 'bbp_theme_after_topic_form_revisions' ); ?>
 
 					<?php endif; ?>
 
@@ -235,7 +224,7 @@
 
 	<div id="no-topic-<?php bbp_topic_id(); ?>" class="bbp-no-topic">
 		<div class="bbp-template-notice">
-			<p class="error"><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
+			<p class="notice"><?php is_user_logged_in() ? _e( 'You cannot create new topics.', 'bbpress' ) : _e( 'You must be logged in to create new topics.', 'bbpress' ); ?></p>
 		</div>
 	</div>
 
