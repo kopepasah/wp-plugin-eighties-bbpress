@@ -38,7 +38,10 @@ add_action( 'wp_enqueue_scripts', 'eighties_bbp_jetpack_remove_infinite_scroll' 
  * icons.
  *
  * @since 1.0.0
-*/
+ *
+ * @param  $args Current arguments.
+ * @return $args Modified arguments.
+ */
 function eighties_bbp_replies_topic_pagination_icons( $args ) {
 	$args['prev_text'] = is_rtl() ? '<i class="fa fa-chevron-right"></i>' : '<i class="fa fa-chevron-left"></i>';
 	$args['next_text'] = is_rtl() ? '<i class="fa fa-chevron-left"></i>' : '<i class="fa fa-chevron-right"></i>';
@@ -47,3 +50,37 @@ function eighties_bbp_replies_topic_pagination_icons( $args ) {
 }
 add_filter( 'bbp_replies_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
 add_filter( 'bbp_topic_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
+
+/**
+ * Filter the favorite button default text.
+ *
+ * @since 1.0.0
+ *
+ * @param  $args Current arguments.
+ * @return $args Modified arguments.
+ */
+function eighties_bbp_filter_favorites_button( $args ) {
+	$args['favorite'] = '<i class="fa fa-star"></i>';
+	$args['favorited'] = '<i class="fa fa-star"></i>';
+
+	return $args;
+}
+add_filter( 'bbp_after_get_user_favorites_link_parse_args', 'eighties_bbp_filter_favorites_button' );
+
+/**
+ * Filter the subscribe button default text.
+ *
+ * @since 1.0.0
+ *
+ * @param  $args Current arguments.
+ * @return $args Modified arguments.
+ */
+function eighties_bbp_filter_subscribtion_button( $args ) {
+	$args['before'] = '';
+	$args['subscribe'] = '<i class="fa fa-rss"></i>';
+	$args['unsubscribe'] = '<i class="fa fa-rss"></i>';
+
+	return $args;
+}
+add_filter( 'bbp_after_get_forum_subscribe_link_parse_args', 'eighties_bbp_filter_subscribtion_button' );
+add_filter( 'bbp_after_get_user_subscribe_link_parse_args', 'eighties_bbp_filter_subscribtion_button' );

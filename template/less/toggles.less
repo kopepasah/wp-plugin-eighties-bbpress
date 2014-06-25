@@ -1,26 +1,56 @@
 /** -----------------------------------------------------:[ Toggles ]:---------- */
-.bbp-row-actions {
-	#favorite-toggle {
-		a {
-			color: green;
-			border: 1px solid #aca;
-			background-color: #dfd;
-			font-weight: bold;
-			&:hover {
-				color: #5a5;
-				border-color: #7c7;
-				background-color: #beb;
+.bbp {
+	&-row-actions {
+		#favorite-toggle {
+			a {
+				color: green;
+				border: 1px solid #aca;
+				background-color: #dfd;
+				font-weight: bold;
+				&:hover {
+					color: #5a5;
+					border-color: #7c7;
+					background-color: #beb;
+				}
+			}
+			.is-favorite {
+				a {
+					color: #faa;
+					border: 1px solid #faa;
+					background-color: #fee;
+					:hover {
+						color: #c88;
+						border-color: #c88;
+						background-color: #fdd;
+					}
+				}
 			}
 		}
-		span.is-favorite {
+	}
+	&-reply-content {
+		.bbp-header & {
+			.clearfix();
+		}
+		#subscription-toggle,
+		#favorite-toggle {
+			float: right;
+			padding: 0.5em;
 			a {
-				color: #faa;
-				border: 1px solid #faa;
-				background-color: #fee;
-				:hover {
-					color: #c88;
-					border-color: #c88;
-					background-color: #fdd;
+				color: @light;
+			}
+		}
+		#subscription-toggle {
+			.is-subscribed {
+				a {
+					color: @orange;
+				}
+			}
+		}
+		#favorite-toggle {
+			padding-right: 1em;
+			.is-favorite {
+				a {
+					color: @yellow;
 				}
 			}
 		}

@@ -58,11 +58,11 @@
 		</li>
 
 		<li class="bbp-forum-counts bbp-counts">
-			<div class="bbp-count-item">
+			<div class="bbp-count-item bbp-count-topics">
 				<span><?php _e( 'Topics', 'eighties-bbpress' ); ?></span>
 				<span class="bbp-count-number"><?php bbp_forum_topic_count(); ?></span>
 			</div>
-			<div class="bbp-count-item">
+			<div class="bbp-count-item bbp-count-replies">
 				<span><?php _e( 'Replies', 'eighties-bbpress' ); ?></span>
 				<span class="bbp-count-number"><?php bbp_show_lead_topic() ? bbp_forum_reply_count() : bbp_forum_post_count(); ?></span>
 			</div>
