@@ -27,7 +27,7 @@ add_filter( 'bbp_default_styles', 'eighties_bbp_default_styles' );
  * @since 1.0.0
 */
 function eighties_bbp_jetpack_remove_infinite_scroll() {
-	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) && ( is_post_type_archive( 'forum' ) || is_post_type_archive( 'topic' ) )  ) {
+	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) && ( bbp_is_forum_archive() || bbp_is_topic_archive() || bbp_is_topic_tag() ) ) {
 		wp_dequeue_script( 'the-neverending-homepage' );
 	}
 }
