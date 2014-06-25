@@ -6,13 +6,13 @@
  *
  * This file contains various functions and hooks
  * used for the templates.
-*/
+ */
 
 /**
  * Filter the stylesheet to use a minified style.
  *
  * @since 1.0.0
-*/
+ */
 function eighties_bbp_default_styles( $styles ) {
 	$styles['bbp-default']['file'] = 'css/bbpress.min.css';
 
@@ -25,7 +25,7 @@ add_filter( 'bbp_default_styles', 'eighties_bbp_default_styles' );
  * forum archive.
  *
  * @since 1.0.0
-*/
+ */
 function eighties_bbp_jetpack_remove_infinite_scroll() {
 	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'infinite-scroll' ) && ( bbp_is_forum_archive() || bbp_is_topic_archive() || bbp_is_topic_tag() ) ) {
 		wp_dequeue_script( 'the-neverending-homepage' );

@@ -6,13 +6,13 @@
  *
  * This file contains functionality checks if
  * both bbPress and Eighties are active.
-*/
+ */
 
 /**
  * Admin init for the add-on.
  *
  * @since 1.0.0
-*/
+ */
 function eighties_bbpress_admin_init() {
 	/**
 	 * If Eightes is not the current template or
@@ -47,7 +47,7 @@ add_action( 'admin_init', 'eighties_bbpress_admin_init' );
  * above.
  *
  * @since 1.0.0
-*/
+ */
 function eighties_bbpress_admin_init_notices() {
 	/**
 	 * Notice for the case that Eighties theme

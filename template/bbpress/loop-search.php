@@ -3,7 +3,7 @@
  * Search Loop
  *
  * @package Eighties Add-on - bbPress
-*/
+ */
 
 ?>
 
