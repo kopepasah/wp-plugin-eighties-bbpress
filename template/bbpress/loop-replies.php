@@ -13,13 +13,15 @@
 
 	<li class="bbp-header">
 
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div><!-- .bbp-reply-author -->
+		<div class="bbp-reply-author">
+			<span class="bbp-header-title"><?php _e( 'User',  'bbpress' ); ?></span>
+		</div><!-- .bbp-reply-author -->
 
 		<div class="bbp-reply-content">
 
-			<?php if ( !bbp_show_lead_topic() ) : ?>
+			<?php if ( ! bbp_show_lead_topic() ) : ?>
 
-				<?php _e( 'Posts', 'bbpress' ); ?>
+				<span class="bbp-header-title"><?php _e( 'Post', 'bbpress' ); ?></span>
 
 				<?php bbp_user_favorites_link(); ?>
 
@@ -27,7 +29,7 @@
 
 			<?php else : ?>
 
-				<?php _e( 'Replies', 'bbpress' ); ?>
+				<span><?php _e( 'Reply', 'bbpress' ); ?></span>
 
 			<?php endif; ?>
 
@@ -52,26 +54,6 @@
 		<?php endif; ?>
 
 	</li><!-- .bbp-body -->
-
-	<li class="bbp-footer">
-
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div>
-
-		<div class="bbp-reply-content">
-
-			<?php if ( !bbp_show_lead_topic() ) : ?>
-
-				<?php _e( 'Posts', 'bbpress' ); ?>
-
-			<?php else : ?>
-
-				<?php _e( 'Replies', 'bbpress' ); ?>
-
-			<?php endif; ?>
-
-		</div><!-- .bbp-reply-content -->
-
-	</li><!-- .bbp-footer -->
 
 </ul><!-- #topic-<?php bbp_topic_id(); ?>-replies -->
 

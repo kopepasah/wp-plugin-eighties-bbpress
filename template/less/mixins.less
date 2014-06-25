@@ -20,7 +20,6 @@
 	font-size: unit( @font-size, em );
 }
 
-
 /** ----------------------------------------:[ 4.2 - Notifications ]:--- */
 .notify( @type, @content ) {
 	position: relative;
@@ -400,4 +399,30 @@
     background-image: url("@{file-2x}");
     background-size: @width-1x @height-1x;
   }
+}
+
+// -----------------------------------------------------:[ Button ]:---------- */
+// This class is not used in the plugin, but rather
+// to be used here in the Less code here.
+.btn() {
+	cursor: pointer;
+	display: inline-block;
+	padding: 1em;
+	background: @primary;
+	border: 0;
+	border-radius: 2px;
+	box-shadow: none;
+	color: #FFF;
+	font-family: @headings-font-family;
+	text-transform: uppercase;
+	font-weight: @headings-font-weight;
+	.transition( ~'box-shadow 100ms linear, border-color 100ms linear' );
+	.backface-visibility( hidden );
+	&:hover,
+	&:focus,
+	&:active {
+		background: @primary;
+		box-shadow: 0 0 0 3px @primary;
+		color: #FFF;
+	}
 }
