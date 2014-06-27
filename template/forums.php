@@ -25,9 +25,21 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if ( bbp_allow_search() && ( is_post_type_archive( 'forum' ) || is_post_type_archive( 'topic' ) ) ) : ?>
+				<?php if ( bbp_allow_search() && ( bbp_is_forum_archive() || bbp_is_topic_archive() ) ) : ?>
 					<div class="bbp-search-form">
 						<?php bbp_get_template_part( 'form', 'search' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if ( bbp_is_topic_tag() && bbp_get_topic_tag_description() ) : ?>
+					<div class="page-description">
+						<?php bbp_topic_tag_description(); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php if ( bbp_is_single_user_profile() && bbp_get_displayed_user_field( 'description' ) ) : ?>
+					<div class="page-description">
+						<?php bbp_displayed_user_field( 'description' ); ?>
 					</div>
 				<?php endif; ?>
 			</header><!-- .page-header -->
