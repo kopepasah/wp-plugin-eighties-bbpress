@@ -14,10 +14,6 @@
 
 	<?php do_action( 'bbp_template_before_user_details' ); ?>
 
-	<?php if ( bbp_is_single_user_profile() ) : ?>
-		
-	<?php endif; ?>
-
 	<div id="bbp-single-user-details">
 
 		<div id="bbp-user-navigation">
