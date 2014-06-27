@@ -364,3 +364,68 @@
 		.clearfix();
 	}
 }
+
+/** ----------------------------------------:[ Search ]:--- */
+#bbp-search-results {
+	.max-width( 800px );
+	border: 1px solid @base-19;
+	li {
+		position: relative;
+		border-bottom: 1px solid @base-19;
+		padding: 1.5em 2em;
+		.clearfix();
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.result-type {
+		position: absolute;
+		top: 50%;
+		margin-top: -1.2em;
+		padding: 2px 5px;
+		color: #FFF;
+		border-radius: 2px;
+		font-size: .8em;
+	}
+	.bbp-results-forum {
+		.result-type {
+			left: -2em;
+			background: @red;
+		}
+	}
+	.bbp-results-topic {
+		.result-type {
+			left: -1.7em;
+			background: @green;
+		}
+	}
+	.bbp-results-reply {
+		.result-type {
+			left: -1.5em;
+			background: @blue;
+		}
+	}
+	.avatar {
+		position: absolute;
+		top: 50%;
+		right: -25px;
+		margin: -25px 0 0;
+		border-radius: 50%;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: .8em;
+	}
+	.dash {
+		color: darken( @light, 50% );
+	}
+	.bbp-author-name,
+	.result-secondary-link {
+		color: @dark;
+		border-bottom: 1px solid lighten( @dark, 50% );
+		&:hover {
+			color: @primary;
+			border-color: transparent;
+		}
+	}
+}

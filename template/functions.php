@@ -50,6 +50,7 @@ function eighties_bbp_replies_topic_pagination_icons( $args ) {
 }
 add_filter( 'bbp_replies_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
 add_filter( 'bbp_topic_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
+add_filter( 'bbp_search_results_pagination', 'eighties_bbp_replies_topic_pagination_icons' );
 
 /**
  * Filter the favorite button default text.
@@ -84,3 +85,18 @@ function eighties_bbp_filter_subscribtion_button( $args ) {
 }
 add_filter( 'bbp_after_get_forum_subscribe_link_parse_args', 'eighties_bbp_filter_subscribtion_button' );
 add_filter( 'bbp_after_get_user_subscribe_link_parse_args', 'eighties_bbp_filter_subscribtion_button' );
+
+/**
+ * Filter the search results query to shoe more results.
+ *
+ * @since 1.0.0
+ */
+function eighties_bbp_filter_search_results_per_page( $integer ) {
+
+	if ( bbp_is_search() ) {
+		$integer = absint( apply_filters( 'eighties_bbp_search_results_per_page', 20 ) );
+	}
+
+	return (int) $integer;
+}
+add_action( 'bbp_get_replies_per_page', 'eighties_bbp_filter_search_results_per_page' );
