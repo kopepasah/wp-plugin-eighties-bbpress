@@ -10,7 +10,7 @@
 	<?php do_action( 'bbp_template_before_user_favorites' ); ?>
 
 	<div id="bbp-user-favorites" class="bbp-user-favorites">
-		<h2 class="entry-title"><?php _e( 'Favorite Forum Topics', 'bbpress' ); ?></h2>
+		<h2 class="user-title"><?php _e( 'Favorite Forum Topics', 'bbpress' ); ?></h2>
 		<div class="bbp-user-section">
 
 			<?php if ( bbp_get_user_favorites() ) : ?>

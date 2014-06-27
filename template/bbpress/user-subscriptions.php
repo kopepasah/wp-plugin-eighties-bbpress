@@ -14,7 +14,7 @@
 		<?php if ( bbp_is_user_home() || current_user_can( 'edit_users' ) ) : ?>
 
 			<div id="bbp-user-subscriptions" class="bbp-user-subscriptions">
-				<h2 class="entry-title"><?php _e( 'Subscribed Forums', 'bbpress' ); ?></h2>
+				<h2 class="user-title"><?php _e( 'Subscribed Forums', 'bbpress' ); ?></h2>
 				<div class="bbp-user-section">
 
 					<?php if ( bbp_get_user_forum_subscriptions() ) : ?>
@@ -29,7 +29,7 @@
 
 				</div>
 
-				<h2 class="entry-title"><?php _e( 'Subscribed Topics', 'bbpress' ); ?></h2>
+				<h2 class="user-title"><?php _e( 'Subscribed Topics', 'bbpress' ); ?></h2>
 				<div class="bbp-user-section">
 
 					<?php if ( bbp_get_user_topic_subscriptions() ) : ?>

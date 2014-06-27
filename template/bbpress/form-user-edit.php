@@ -9,7 +9,7 @@
 
 <form id="bbp-your-profile" action="<?php bbp_user_profile_edit_url( bbp_get_displayed_user_id() ); ?>" method="post" enctype="multipart/form-data">
 
-	<h2 class="entry-title"><?php _e( 'Name', 'bbpress' ) ?></h2>
+	<h2 class="user-title"><?php _e( 'Name', 'bbpress' ) ?></h2>
 
 	<?php do_action( 'bbp_user_edit_before' ); ?>
 
@@ -44,7 +44,7 @@
 
 	</fieldset>
 
-	<h2 class="entry-title"><?php _e( 'Contact Info', 'bbpress' ) ?></h2>
+	<h2 class="user-title"><?php _e( 'Contact Info', 'bbpress' ) ?></h2>
 
 	<fieldset class="bbp-form">
 		<legend><?php _e( 'Contact Info', 'bbpress' ) ?></legend>
@@ -69,7 +69,7 @@
 
 	</fieldset>
 
-	<h2 class="entry-title"><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></h2>
+	<h2 class="user-title"><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></h2>
 
 	<fieldset class="bbp-form">
 		<legend><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></legend>
@@ -85,7 +85,7 @@
 
 	</fieldset>
 
-	<h2 class="entry-title"><?php _e( 'Account', 'bbpress' ) ?></h2>
+	<h2 class="user-title"><?php _e( 'Account', 'bbpress' ) ?></h2>
 
 	<fieldset class="bbp-form">
 		<legend><?php _e( 'Account', 'bbpress' ) ?></legend>
@@ -138,7 +138,7 @@
 
 	<?php if ( current_user_can( 'edit_users' ) && ! bbp_is_user_home_edit() ) : ?>
 
-		<h2 class="entry-title"><?php _e( 'User Role', 'bbpress' ) ?></h2>
+		<h2 class="user-title"><?php _e( 'User Role', 'bbpress' ) ?></h2>
 
 		<fieldset class="bbp-form">
 			<legend><?php _e( 'User Role', 'bbpress' ); ?></legend>
