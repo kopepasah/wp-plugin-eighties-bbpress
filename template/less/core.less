@@ -7,6 +7,17 @@
 .js {
 	.bbpress {
 		.page {
+			&-header {
+				.bbp-search-form {
+					input {
+						background: lighten( @base-19, 10% );
+						border: 1px solid lighten( @base-19, 10% );
+						&:focus {
+							background: #FFF;
+						}
+					}
+				}
+			}
 			&-description {
 				a {
 					color: #FFF;
