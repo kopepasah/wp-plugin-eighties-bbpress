@@ -7,6 +7,6 @@
 
 ?>
 
-<div class="bbp-template-notice">
-	<p><?php _e( 'Oh bother! No forums were found here!', 'bbpress' ); ?></p>
+<div class="bbp-template-notice notice">
+	<p><?php _e( 'Sorry about this, but no forums were found.', 'bbpress' ); ?></p>
 </div>
