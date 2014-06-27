@@ -37,20 +37,21 @@
 		margin-top: -1em;
 		text-align: center;
 		a {
-			padding: 5px 8px;
+			padding: 4px 8px;
 			background: lighten( @base-19, 5% );
 			border-radius: 2px;
 			color: #FFF;
 			font-size: .9em;
 			.transition( ~'background 200ms linear' );
 			&:hover {
-				background: @green;
+				background: @orange;
 			}
 		}
 		.is-subscribed {
 			a {
+				background: @orange;
 				&:hover {
-					background: @red;
+					background: lighten( @base-19, 5% );
 				}
 			}
 		}
