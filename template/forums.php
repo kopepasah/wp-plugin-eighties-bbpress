@@ -37,7 +37,7 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if ( bbp_is_single_user_profile() && bbp_get_displayed_user_field( 'description' ) ) : ?>
+				<?php if ( bbp_is_single_user() && bbp_get_displayed_user_field( 'description' ) ) : ?>
 					<div class="page-description">
 						<?php bbp_displayed_user_field( 'description' ); ?>
 					</div>

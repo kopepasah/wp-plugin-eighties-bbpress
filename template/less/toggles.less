@@ -1,32 +1,5 @@
 /** -----------------------------------------------------:[ Toggles ]:---------- */
 .bbp {
-	&-row-actions {
-		#favorite-toggle {
-			a {
-				color: green;
-				border: 1px solid #aca;
-				background-color: #dfd;
-				font-weight: bold;
-				&:hover {
-					color: #5a5;
-					border-color: #7c7;
-					background-color: #beb;
-				}
-			}
-			.is-favorite {
-				a {
-					color: #faa;
-					border: 1px solid #faa;
-					background-color: #fee;
-					:hover {
-						color: #c88;
-						border-color: #c88;
-						background-color: #fdd;
-					}
-				}
-			}
-		}
-	}
 	&-reply-content {
 		.bbp-header & {
 			.clearfix();
@@ -83,29 +56,3 @@
 		}
 	}
 }
-
-/** ---:[ User Subscription Page ]:--- */
-.bbp-row-actions #subscription-toggle a {
-	text-decoration: none;
-	padding: 0 3px 1px;
-	color: #7c7;
-	border: 1px solid #aca;
-	background-color: #dfd;
-	font-weight: bold;
-	font-size: 13px;
-	}
-	.bbp-row-actions #subscription-toggle a:hover {
-		color: #5a5;
-		border-color: #7c7;
-		background-color: #beb;
-	}
-	.bbp-row-actions #subscription-toggle span.is-subscribed a {
-		color: #faa;
-		border: 1px solid #faa;
-		background-color: #fee;
-		}
-		.bbp-row-actions #subscription-toggle span.is-subscribed a:hover {
-			color: #c88;
-			border-color: #c88;
-			background-color: #fdd;
-		}
