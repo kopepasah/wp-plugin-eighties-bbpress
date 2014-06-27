@@ -13,6 +13,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<header class="page-header">
+				<?php if ( bbp_is_single_user() ) : ?>
+					<?php echo get_avatar( bbp_get_displayed_user_field( 'user_email', 'raw' ), apply_filters( 'bbp_single_user_details_avatar_size', 150 ) ); ?>
+				<?php endif; ?>
 				<h1 class="page-title">
 					<?php echo get_the_title( get_the_ID() ); ?>
 				</h1>
@@ -37,10 +40,13 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 
-				<?php if ( bbp_is_single_user() && bbp_get_displayed_user_field( 'description' ) ) : ?>
-					<div class="page-description">
-						<?php bbp_displayed_user_field( 'description' ); ?>
-					</div>
+				<?php if ( bbp_is_single_user() ) : ?>
+					<?php if ( bbp_get_displayed_user_field( 'description' ) ) : ?>
+						<div class="page-description">
+							<?php bbp_displayed_user_field( 'description' ); ?>
+						</div>
+					<?php endif; ?>
+					<span><?php bbp_user_display_role(); ?></span>
 				<?php endif; ?>
 			</header><!-- .page-header -->
 

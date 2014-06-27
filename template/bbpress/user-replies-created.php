@@ -10,7 +10,6 @@
 	<?php do_action( 'bbp_template_before_user_replies' ); ?>
 
 	<div id="bbp-user-replies-created" class="bbp-user-replies-created">
-		<h2 class="user-title"><?php _e( 'Forum Replies Created', 'bbpress' ); ?></h2>
 		<div class="bbp-user-section">
 
 			<?php if ( bbp_get_user_replies_created() ) : ?>
