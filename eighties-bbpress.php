@@ -2,7 +2,7 @@
 /*
 Plugin Name: Eighties Add-on - bbPress
 Version: 1.0.0
-Plugin URI: http://kopepasah.com/plugins/eighties-bbpress
+Plugin URI: http://eighties.me/add-ons/bbpress
 Description: This add-on pairs the power and functionality of bbPress with the modern, sleek design of Eightes.
 Author: Justin Kopepasah
 Author URI: http://kopepasah.com

@@ -1,25 +1,27 @@
 {
-	"name" : "eighties-bbpress",
-	"version" : "1.0.0",
-	"author" : "Justin Kopepasah <justin@kopepasah.com>",
-	"homepage" : "http://eighties.me/bbpress/",
+	"name"       : "eighties-bbpress",
+	"version"    : "1.0.0",
+	"author"     : "Justin Kopepasah <justin@kopepasah.com>",
+	"homepage"   : "http://eighties.me/bbpress/",
 	"repository" : {
 		"type" : "git",
-		"url" : "git://github.com/kopepasah/eighties-bbpress.git"
+		"url"  : "git://github.com/kopepasah/eighties-bbpress.git"
 	},
 	"bugs" : {
 		"url" : "https://github.com/kopepasah/eighties-bbpress/issues"
 	},
 	"licenses" : [{
-		"type" : "GPLv2",
-		"url" : "http://www.gnu.org/licenses/gpl-2.0.html"
+		"type"  : "GPLv2",
+		"url"   : "http://www.gnu.org/licenses/gpl-2.0.html"
 	}],
 	"engines" : {
 		"node" : ">= 0.10.0"
 	},
 	"devDependencies" : {
-		"grunt" : "~0.4.2",
-		"grunt-contrib-less" : "~0.8.1",
-		"grunt-contrib-watch": "latest"
+		"grunt"                  : "~0.4.2",
+		"grunt-contrib-less"     : "~0.8.1",
+		"grunt-contrib-watch"    : "latest",
+		"grunt-contrib-compress" : "latest",
+		"grunt-wp-i18n"          : "latest"
 	}
 }
