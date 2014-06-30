@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Eighties Add-on - bbPress\n"
-"POT-Creation-Date: 2014-06-30 22:20+0900\n"
-"PO-Revision-Date: 2014-06-30 22:21+0900\n"
+"POT-Creation-Date: 2014-06-30 23:33+0900\n"
+"PO-Revision-Date: 2014-06-30 23:33+0900\n"
 "Last-Translator: Justin Kopepasah <justin@kopepasah.com>\n"
 "Language-Team: Justin Kopepasah <justin@kopepasah.com>\n"
 "Language: en_US\n"
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Topic"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:15
+#: template/bbpress/content-statistics.php:16
 msgid "Registered Users"
 msgstr ""
 
@@ -58,30 +58,30 @@ msgstr ""
 msgid "Forums"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:25
+#: template/bbpress/content-statistics.php:24
 #: template/bbpress/loop-single-forum.php:62
 msgid "Topics"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:30
+#: template/bbpress/content-statistics.php:28
 #: template/bbpress/loop-single-forum.php:66
 #: template/bbpress/loop-topics.php:22
 msgid "Replies"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:35
+#: template/bbpress/content-statistics.php:32
 msgid "Topic Tags"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:42
+#: template/bbpress/content-statistics.php:38
 msgid "Empty Topic Tags"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:51
+#: template/bbpress/content-statistics.php:45
 msgid "Hidden Topics"
 msgstr ""
 
-#: template/bbpress/content-statistics.php:62
+#: template/bbpress/content-statistics.php:52
 msgid "Hidden Replies"
 msgstr ""
 
