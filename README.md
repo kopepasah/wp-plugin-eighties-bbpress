@@ -36,7 +36,7 @@ Eighties Add-on bbPress will only work if both Eighties (theme) and bbPress (plu
 
 ### Customization
 
-Eighties Add-on bbPress follows the bbPress model of [customizing templates](http://codex.bbpress.org/theme-compatibility/step-by-step-guide-to-creating-a-custom-bbpress-theme/). For example, if copying a template file over to your theme (or child theme, because you are using Eighties) from the add-on will override the template file for the add-on.
+Eighties Add-on bbPress follows the bbPress model of [customizing templates](http://codex.bbpress.org/theme-compatibility/step-by-step-guide-to-creating-a-custom-bbpress-theme/). For example, copying a template file over to your theme (or child theme, because you are using Eighties) from the add-on will override the template file for the add-on.
 
 The bbPress template files for the add-on are located here:
 
