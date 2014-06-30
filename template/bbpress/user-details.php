@@ -14,8 +14,6 @@
 
 	<?php do_action( 'bbp_template_before_user_details' ); ?>
 
-	<div id="bbp-single-user-details">
-
 		<div id="bbp-user-navigation">
 			<ul>
 				<li class="<?php if ( bbp_is_single_user_topics() ) :?>current<?php endif; ?>">
@@ -58,6 +56,5 @@
 
 			</ul>
 		</div><!-- #bbp-user-navigation -->
-	</div><!-- #bbp-single-user-details -->
 
 	<?php do_action( 'bbp_template_after_user_details' ); ?>
