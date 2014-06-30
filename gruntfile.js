@@ -46,7 +46,8 @@ module.exports = function(grunt) {
 							'!.git/**',
 							'!template/less/**',
 							'!node_modules/**',
-							'!releases/**'
+							'!releases/**',
+							'!assets/**'
 						]
 					}
 				]
