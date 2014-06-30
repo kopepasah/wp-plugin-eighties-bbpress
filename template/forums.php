@@ -46,7 +46,7 @@ get_header(); ?>
 							<?php bbp_displayed_user_field( 'description' ); ?>
 						</div>
 					<?php endif; ?>
-					<span><?php bbp_user_display_role(); ?></span>
+					<span class="user-forum-role"><?php bbp_user_display_role(); ?></span>
 				<?php endif; ?>
 			</header><!-- .page-header -->
 

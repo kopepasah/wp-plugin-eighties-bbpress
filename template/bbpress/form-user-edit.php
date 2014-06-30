@@ -9,12 +9,10 @@
 
 <form id="bbp-your-profile" action="<?php bbp_user_profile_edit_url( bbp_get_displayed_user_id() ); ?>" method="post" enctype="multipart/form-data">
 
-	<h2 class="user-title"><?php _e( 'Name', 'bbpress' ) ?></h2>
-
 	<?php do_action( 'bbp_user_edit_before' ); ?>
 
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Name', 'bbpress' ) ?></legend>
+		<legend><span><?php _e( 'Name', 'bbpress' ) ?></span></legend>
 
 		<?php do_action( 'bbp_user_edit_before_name' ); ?>
 
@@ -44,10 +42,8 @@
 
 	</fieldset>
 
-	<h2 class="user-title"><?php _e( 'Contact Info', 'bbpress' ) ?></h2>
-
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Contact Info', 'bbpress' ) ?></legend>
+		<legend><span><?php _e( 'Contact Info', 'bbpress' ) ?></span></legend>
 
 		<?php do_action( 'bbp_user_edit_before_contact' ); ?>
 
@@ -69,10 +65,8 @@
 
 	</fieldset>
 
-	<h2 class="user-title"><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></h2>
-
 	<fieldset class="bbp-form">
-		<legend><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></legend>
+		<legend><span><?php bbp_is_user_home_edit() ? _e( 'About Yourself', 'bbpress' ) : _e( 'About the user', 'bbpress' ); ?></span></legend>
 
 		<?php do_action( 'bbp_user_edit_before_about' ); ?>
 
@@ -85,10 +79,8 @@
 
 	</fieldset>
 
-	<h2 class="user-title"><?php _e( 'Account', 'bbpress' ) ?></h2>
-
 	<fieldset class="bbp-form">
-		<legend><?php _e( 'Account', 'bbpress' ) ?></legend>
+		<legend><span><?php _e( 'Account', 'bbpress' ) ?></span></legend>
 
 		<?php do_action( 'bbp_user_edit_before_account' ); ?>
 
@@ -122,8 +114,7 @@
 			<label for="pass1"><?php _e( 'New Password', 'bbpress' ); ?></label>
 			<fieldset class="bbp-form password">
 				<input type="password" name="pass1" id="pass1" size="16" value="" autocomplete="off" tabindex="<?php bbp_tab_index(); ?>" />
-				<span class="description"><?php _e( 'If you would like to change the password type a new one. Otherwise leave this blank.', 'bbpress' ); ?></span>
-
+				<p class="description"><?php _e( 'If you would like to change the password type a new one. Otherwise leave this blank.', 'bbpress' ); ?></p>
 				<input type="password" name="pass2" id="pass2" size="16" value="" autocomplete="off" tabindex="<?php bbp_tab_index(); ?>" />
 				<span class="description"><?php _e( 'Type your new password again.', 'bbpress' ); ?></span><br />
 
@@ -138,10 +129,8 @@
 
 	<?php if ( current_user_can( 'edit_users' ) && ! bbp_is_user_home_edit() ) : ?>
 
-		<h2 class="user-title"><?php _e( 'User Role', 'bbpress' ) ?></h2>
-
 		<fieldset class="bbp-form">
-			<legend><?php _e( 'User Role', 'bbpress' ); ?></legend>
+			<legend><span><?php _e( 'User Role', 'bbpress' ); ?></span></legend>
 
 			<?php do_action( 'bbp_user_edit_before_role' ); ?>
 
@@ -168,7 +157,6 @@
 	<?php do_action( 'bbp_user_edit_after' ); ?>
 
 	<fieldset class="submit">
-		<legend><?php _e( 'Save Changes', 'bbpress' ); ?></legend>
 		<div>
 
 			<?php bbp_edit_user_form_fields(); ?>
