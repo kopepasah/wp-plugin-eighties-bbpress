@@ -38,6 +38,16 @@ require_once( EIGHTIES_BBPRESS_DIR_PATH . 'includes/compatibility.php' );
 
 // If we've made it this far, the plugin is active.
 
+/**
+ * Load textdomain.
+ *
+ * @since 1.0.0
+ */
+function eighties_bbp_load_textdomain() {
+	load_plugin_textdomain( 'eighties-bbpress', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+}
+add_action( 'plugins_loaded', 'eighties_bbp_load_textdomain' );
+
 // Add new template stack. Yep, this is cool.
 require_once( EIGHTIES_BBPRESS_DIR_PATH . 'includes/templates.php' );
 

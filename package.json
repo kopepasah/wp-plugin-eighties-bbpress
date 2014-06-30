@@ -2,7 +2,7 @@
 	"name"       : "eighties-bbpress",
 	"version"    : "1.0.0",
 	"author"     : "Justin Kopepasah <justin@kopepasah.com>",
-	"homepage"   : "http://eighties.me/bbpress/",
+	"homepage"   : "http://eighties.me/add-on/bbpress/",
 	"repository" : {
 		"type" : "git",
 		"url"  : "git://github.com/kopepasah/eighties-bbpress.git"
@@ -21,7 +21,6 @@
 		"grunt"                  : "~0.4.2",
 		"grunt-contrib-less"     : "~0.8.1",
 		"grunt-contrib-watch"    : "latest",
-		"grunt-contrib-compress" : "latest",
-		"grunt-wp-i18n"          : "latest"
+		"grunt-contrib-compress" : "latest"
 	}
 }
