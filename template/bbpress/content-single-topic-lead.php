@@ -13,11 +13,11 @@
 
 	<li class="bbp-header">
 
-		<div class="bbp-topic-author"><?php  _e( 'Creator',  'bbpress' ); ?></div><!-- .bbp-topic-author -->
+		<div class="bbp-topic-author"><?php  _e( 'Creator',  'eighties-bbpress' ); ?></div><!-- .bbp-topic-author -->
 
 		<div class="bbp-topic-content">
 
-			<?php _e( 'Topic', 'bbpress' ); ?>
+			<?php _e( 'Topic', 'eighties-bbpress' ); ?>
 
 			<?php bbp_topic_subscription_link(); ?>
 
@@ -85,11 +85,11 @@
 
 	<li class="bbp-footer">
 
-		<div class="bbp-topic-author"><?php  _e( 'Creator',  'bbpress' ); ?></div>
+		<div class="bbp-topic-author"><?php  _e( 'Creator',  'eighties-bbpress' ); ?></div>
 
 		<div class="bbp-topic-content">
 
-			<?php _e( 'Topic', 'bbpress' ); ?>
+			<?php _e( 'Topic', 'eighties-bbpress' ); ?>
 
 		</div><!-- .bbp-topic-content -->
 

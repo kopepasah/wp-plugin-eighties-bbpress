@@ -8,5 +8,5 @@
 ?>
 
 <div class="bbp-template-notice info">
-	<p><?php _e( 'You are already logged in.', 'bbpress' ); ?></p>
+	<p><?php _e( 'You are already logged in.', 'eighties-bbpress' ); ?></p>
 </div>

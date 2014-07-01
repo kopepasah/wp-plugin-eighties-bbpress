@@ -20,7 +20,7 @@
 
 			<p class="bbp-form-title">
 
-				<?php printf( __( 'Reply To: %s', 'bbpress' ), bbp_get_topic_title() ); ?>
+				<?php printf( __( 'Reply To: %s', 'eighties-bbpress' ), bbp_get_topic_title() ); ?>
 
 			</p>
 
@@ -33,7 +33,7 @@
 				<?php if ( !bbp_is_topic_open() && !bbp_is_reply_edit() ) : ?>
 
 					<div class="bbp-template-notice">
-						<p><?php _e( 'This topic is marked as closed to new replies, however your posting capabilities still allow you to do so.', 'bbpress' ); ?></p>
+						<p><?php _e( 'This topic is marked as closed to new replies, however your posting capabilities still allow you to do so.', 'eighties-bbpress' ); ?></p>
 					</div>
 
 				<?php endif; ?>
@@ -41,7 +41,7 @@
 				<!-- <?php if ( current_user_can( 'unfiltered_html' ) ) : ?>
 
 					<div class="bbp-template-notice">
-						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'bbpress' ); ?></p>
+						<p><?php _e( 'Your account has the ability to post unrestricted HTML content.', 'eighties-bbpress' ); ?></p>
 					</div>
 
 				<?php endif; ?> -->
@@ -61,7 +61,7 @@
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
 						<p class="form-allowed-tags">
-							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','bbpress' ); ?></label><br />
+							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','eighties-bbpress' ); ?></label><br />
 							<code><?php bbp_allowed_tags(); ?></code>
 						</p>
 
@@ -72,7 +72,7 @@
 						<?php do_action( 'bbp_theme_before_reply_form_tags' ); ?>
 
 						<p>
-							<label for="bbp_topic_tags"><?php _e( 'Tags', 'bbpress' ); ?></label><br />
+							<label for="bbp_topic_tags"><?php _e( 'Tags', 'eighties-bbpress' ); ?></label><br />
 							<input type="text" value="<?php bbp_form_topic_tags(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_tags" id="bbp_topic_tags" <?php disabled( bbp_is_topic_spam() ); ?> />
 						</p>
 
@@ -90,11 +90,11 @@
 
 							<?php if ( bbp_is_reply_edit() && ( bbp_get_reply_author_id() !== bbp_get_current_user_id() ) ) : ?>
 
-								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of follow-up replies via email', 'bbpress' ); ?></label>
+								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of follow-up replies via email', 'eighties-bbpress' ); ?></label>
 
 							<?php else : ?>
 
-								<label for="bbp_topic_subscription"><?php _e( 'Notify me of follow-up replies via email', 'bbpress' ); ?></label>
+								<label for="bbp_topic_subscription"><?php _e( 'Notify me of follow-up replies via email', 'eighties-bbpress' ); ?></label>
 
 							<?php endif; ?>
 
@@ -111,11 +111,11 @@
 						<fieldset class="bbp-form">
 							<legend>
 								<input name="bbp_log_reply_edit" id="bbp_log_reply_edit" type="checkbox" value="1" <?php bbp_form_reply_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
-								<label for="bbp_log_reply_edit"><?php _e( 'Keep a log of this edit:', 'bbpress' ); ?></label><br />
+								<label for="bbp_log_reply_edit"><?php _e( 'Keep a log of this edit:', 'eighties-bbpress' ); ?></label><br />
 							</legend>
 
 							<div>
-								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'bbpress' ), bbp_get_current_user_name() ); ?></label><br />
+								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'eighties-bbpress' ), bbp_get_current_user_name() ); ?></label><br />
 								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" />
 							</div>
 						</fieldset>
@@ -132,7 +132,7 @@
 
 						<?php bbp_cancel_reply_to_link(); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( 'Submit', 'eighties-bbpress' ); ?></button>
 
 						<?php do_action( 'bbp_theme_after_reply_form_submit_button' ); ?>
 
@@ -155,7 +155,7 @@
 
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bbp-template-notice">
-			<p><?php printf( __( 'The topic &#8216;%s&#8217; is closed to new replies.', 'bbpress' ), bbp_get_topic_title() ); ?></p>
+			<p><?php printf( __( 'The topic &#8216;%s&#8217; is closed to new replies.', 'eighties-bbpress' ), bbp_get_topic_title() ); ?></p>
 		</div>
 	</div>
 
@@ -163,7 +163,7 @@
 
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bbp-template-notice">
-			<p><?php printf( __( 'The forum &#8216;%s&#8217; is closed to new topics and replies.', 'bbpress' ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></p>
+			<p><?php printf( __( 'The forum &#8216;%s&#8217; is closed to new topics and replies.', 'eighties-bbpress' ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></p>
 		</div>
 	</div>
 
@@ -171,7 +171,7 @@
 
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bbp-template-notice">
-			<p class="notice"><?php is_user_logged_in() ? _e( 'You cannot reply to this topic.', 'bbpress' ) : _e( 'You must be logged in to reply to this topic.', 'bbpress' ); ?></p>
+			<p class="notice"><?php is_user_logged_in() ? _e( 'You cannot reply to this topic.', 'eighties-bbpress' ) : _e( 'You must be logged in to reply to this topic.', 'eighties-bbpress' ); ?></p>
 		</div>
 	</div>
 

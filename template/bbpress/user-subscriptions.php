@@ -22,7 +22,7 @@
 
 					<?php else : ?>
 
-						<p class="bbp-user-notice notice"><?php bbp_is_user_home() ? _e( 'You are not currently subscribed to any forums.', 'bbpress' ) : _e( 'This user is not currently subscribed to any forums.', 'bbpress' ); ?></p>
+						<p class="bbp-user-notice notice"><?php bbp_is_user_home() ? _e( 'You are not currently subscribed to any forums.', 'eighties-bbpress' ) : _e( 'This user is not currently subscribed to any forums.', 'eighties-bbpress' ); ?></p>
 
 					<?php endif; ?>
 
@@ -40,7 +40,7 @@
 
 					<?php else : ?>
 
-						<p><?php bbp_is_user_home() ? _e( 'You are not currently subscribed to any topics.', 'bbpress' ) : _e( 'This user is not currently subscribed to any topics.', 'bbpress' ); ?></p>
+						<p><?php bbp_is_user_home() ? _e( 'You are not currently subscribed to any topics.', 'eighties-bbpress' ) : _e( 'This user is not currently subscribed to any topics.', 'eighties-bbpress' ); ?></p>
 
 					<?php endif; ?>
 

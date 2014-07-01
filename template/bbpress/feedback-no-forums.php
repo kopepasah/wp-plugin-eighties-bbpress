@@ -8,5 +8,5 @@
 ?>
 
 <div class="bbp-template-notice notice">
-	<p><?php _e( 'Sorry about this, but no forums were found.', 'bbpress' ); ?></p>
+	<p><?php _e( 'Sorry about this, but no forums were found.', 'eighties-bbpress' ); ?></p>
 </div>

@@ -14,14 +14,14 @@
 	<li class="bbp-header">
 
 		<div class="bbp-reply-author">
-			<span class="bbp-header-title"><?php _e( 'User',  'bbpress' ); ?></span>
+			<span class="bbp-header-title"><?php _e( 'User',  'eighties-bbpress' ); ?></span>
 		</div><!-- .bbp-reply-author -->
 
 		<div class="bbp-reply-content">
 
 			<?php if ( ! bbp_show_lead_topic() ) : ?>
 
-				<span class="bbp-header-title"><?php _e( 'Post', 'bbpress' ); ?></span>
+				<span class="bbp-header-title"><?php _e( 'Post', 'eighties-bbpress' ); ?></span>
 
 				<?php bbp_user_favorites_link(); ?>
 
@@ -29,7 +29,7 @@
 
 			<?php else : ?>
 
-				<span><?php _e( 'Reply', 'bbpress' ); ?></span>
+				<span><?php _e( 'Reply', 'eighties-bbpress' ); ?></span>
 
 			<?php endif; ?>
 

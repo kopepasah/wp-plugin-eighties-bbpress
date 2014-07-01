@@ -14,15 +14,15 @@
 	<li class="bbp-header">
 
 		<ul class="item-names">
-			<li class="bbp-topic-title"><?php _e( 'Topic', 'bbpress' ); ?></li>
+			<li class="bbp-topic-title"><?php _e( 'Topic', 'eighties-bbpress' ); ?></li>
 			<?php if ( is_post_type_archive( 'topic' ) ) : ?>
-				<li class="bbp-topic-forum"><?php _e( 'Forum', 'bbpress' ); ?></li>
+				<li class="bbp-topic-forum"><?php _e( 'Forum', 'eighties-bbpress' ); ?></li>
 			<?php endif; ?>
-			<li class="bbp-topic-voices"><?php _e( 'Voices', 'bbpress' ); ?></li>
-			<li class="bbp-topic-replies"><?php bbp_show_lead_topic() ? _e( 'Replies', 'bbpress' ) : _e( 'Posts', 'bbpress' ); ?></li>
-			<li class="bbp-topic-activity"><?php _e( 'Latest Activity', 'bbpress' ); ?></li>
+			<li class="bbp-topic-voices"><?php _e( 'Voices', 'eighties-bbpress' ); ?></li>
+			<li class="bbp-topic-replies"><?php bbp_show_lead_topic() ? _e( 'Replies', 'eighties-bbpress' ) : _e( 'Posts', 'eighties-bbpress' ); ?></li>
+			<li class="bbp-topic-activity"><?php _e( 'Latest Activity', 'eighties-bbpress' ); ?></li>
 			<?php if ( ! is_post_type_archive( 'topic' ) ) : ?>
-				<li class="bbp-topic-author"><?php _e( 'Poster', 'bbpress' ); ?></li>
+				<li class="bbp-topic-author"><?php _e( 'Poster', 'eighties-bbpress' ); ?></li>
 			<?php endif; ?>
 		</ul>
 

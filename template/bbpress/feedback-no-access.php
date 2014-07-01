@@ -10,7 +10,7 @@
 <div id="forum-private" class="bbp-forum-content">
 	<div class="entry-content">
 		<div class="bbp-template-notice error">
-			<p><?php _e( 'You do not have permission to view this forum.', 'bbpress' ); ?></p>
+			<p><?php _e( 'You do not have permission to view this forum.', 'eighties-bbpress' ); ?></p>
 		</div>
 	</div>
 </div><!-- #forum-private -->

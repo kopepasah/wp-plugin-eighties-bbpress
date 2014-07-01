@@ -22,7 +22,7 @@
 
 			<?php else : ?>
 
-				<p class="bbp-user-notice notice"><?php bbp_is_user_home() ? _e( 'You currently have no favorite topics.', 'bbpress' ) : _e( 'This user has no favorite topics.', 'bbpress' ); ?></p>
+				<p class="bbp-user-notice notice"><?php bbp_is_user_home() ? _e( 'You currently have no favorite topics.', 'eighties-bbpress' ) : _e( 'This user has no favorite topics.', 'eighties-bbpress' ); ?></p>
 
 			<?php endif; ?>
 

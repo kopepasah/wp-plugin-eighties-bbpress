@@ -22,7 +22,7 @@
 
 			<?php else : ?>
 
-				<p><?php bbp_is_user_home() ? _e( 'You have not created any topics.', 'bbpress' ) : _e( 'This user has not created any topics.', 'bbpress' ); ?></p>
+				<p><?php bbp_is_user_home() ? _e( 'You have not created any topics.', 'eighties-bbpress' ) : _e( 'This user has not created any topics.', 'eighties-bbpress' ); ?></p>
 
 			<?php endif; ?>
 
