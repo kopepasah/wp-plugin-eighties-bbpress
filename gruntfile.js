@@ -53,6 +53,32 @@ module.exports = function(grunt) {
 				]
 			},
 		},
+		makepot: {
+			target: {
+				options: {
+					domainPath: '/languages',
+					potFilename: 'eighties-bbpress-en_US.pot',
+					exclude: [
+						'assets/.*',
+						'template/css/.*',
+						'template/js/.*',
+						'template/less/.*',
+						'languages/.*',
+						'releases/.*',
+						'gruntfile.js',
+						'license.txt',
+						'package.json'
+					],
+					processPot: function( pot, options ) {
+						pot.headers['report-msgid-bugs-to'] = 'http://github.com/kopepasah/eighties-bbpress/issues';
+						delete pot.headers['x-generator'];
+
+						return pot;
+					},
+					type: 'wp-plugin'
+				}
+			}
+		},
 		shell: {
 			grunt: {
 				command: 'afplay ~/Library/Sounds/Grunt.aiff'
@@ -64,6 +90,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-less' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-compress' );
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-shell' );
 
 	grunt.registerTask( 'zip', 'Make a zip file for the project.', function( name ){

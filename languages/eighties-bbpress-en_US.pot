@@ -1,41 +1,29 @@
+# Copyright (C) 2014 Justin Kopepasah
+# This file is distributed under the same license as the Eighties Add-on - bbPress package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Eighties Add-on - bbPress\n"
-"POT-Creation-Date: 2014-06-30 23:33+0900\n"
-"PO-Revision-Date: 2014-06-30 23:33+0900\n"
-"Last-Translator: Justin Kopepasah <justin@kopepasah.com>\n"
-"Language-Team: Justin Kopepasah <justin@kopepasah.com>\n"
-"Language: en_US\n"
+"Project-Id-Version: Eighties Add-on - bbPress 1.0.0\n"
+"Report-Msgid-Bugs-To: http://github.com/kopepasah/eighties-bbpress/issues\n"
+"POT-Creation-Date: 2014-07-01 08:30:06+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: includes/compatibility.php:59
-#, php-format
 msgid ""
-"Eighties Add-on - bbPress has been deactivated as it requires %sEightes theme"
-"%s. You must download, install and activate the theme before activating this "
-"add-on."
+"Eighties Add-on - bbPress has been deactivated as it requires %sEightes "
+"theme%s. You must download, install and activate the theme before "
+"activating this add-on."
 msgstr ""
 
 #: includes/compatibility.php:65
-#, php-format
 msgid ""
 "Eighties Add-on - bbPress has been deactivated as it requires %sbbPress "
 "plugin%s. You must download, install and activate the plugin before "
 "activating this add-on."
-msgstr ""
-
-#: node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
-msgid "Exclude"
 msgstr ""
 
 #: template/bbpress/content-single-topic-lead.php:16
@@ -130,12 +118,10 @@ msgid "Website:"
 msgstr ""
 
 #: template/bbpress/form-forum.php:30 template/bbpress/form-topic.php:43
-#, php-format
 msgid "Now Editing &ldquo;%s&rdquo;"
 msgstr ""
 
 #: template/bbpress/form-forum.php:32
-#, php-format
 msgid "Create New Forum in &ldquo;%s&rdquo;"
 msgstr ""
 
@@ -155,14 +141,13 @@ msgid "Your account has the ability to post unrestricted HTML content."
 msgstr ""
 
 #: template/bbpress/form-forum.php:62
-#, php-format
 msgid "Forum Name (Maximum Length: %d):"
 msgstr ""
 
 #: template/bbpress/form-forum.php:77 template/bbpress/form-reply.php:64
 msgid ""
-"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
-"and attributes:"
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"tags and attributes:"
 msgstr ""
 
 #: template/bbpress/form-forum.php:86
@@ -186,15 +171,12 @@ msgid "(No Parent)"
 msgstr ""
 
 #: template/bbpress/form-forum.php:133 template/bbpress/form-reply-move.php:67
-#: template/bbpress/form-reply.php:135
-#: template/bbpress/form-topic-merge.php:88
-#: template/bbpress/form-topic-split.php:92
-#: template/bbpress/form-topic.php:196
+#: template/bbpress/form-reply.php:135 template/bbpress/form-topic-merge.php:88
+#: template/bbpress/form-topic-split.php:92 template/bbpress/form-topic.php:196
 msgid "Submit"
 msgstr ""
 
 #: template/bbpress/form-forum.php:156
-#, php-format
 msgid "The forum &#8216;%s&#8217; is closed to new content."
 msgstr ""
 
@@ -211,7 +193,6 @@ msgid "Protected"
 msgstr ""
 
 #: template/bbpress/form-reply-move.php:19
-#, php-format
 msgid "Move reply \"%s\""
 msgstr ""
 
@@ -233,12 +214,10 @@ msgstr ""
 
 #: template/bbpress/form-reply-move.php:36
 #: template/bbpress/form-topic-split.php:36
-#, php-format
 msgid "New topic in <strong>%s</strong> titled:"
 msgstr ""
 
 #: template/bbpress/form-reply-move.php:37
-#, php-format
 msgid "Moved: %s"
 msgstr ""
 
@@ -262,7 +241,6 @@ msgid "You cannot edit this reply."
 msgstr ""
 
 #: template/bbpress/form-reply.php:23
-#, php-format
 msgid "Reply To: %s"
 msgstr ""
 
@@ -293,12 +271,10 @@ msgid "Optional reason for editing:"
 msgstr ""
 
 #: template/bbpress/form-reply.php:158
-#, php-format
 msgid "The topic &#8216;%s&#8217; is closed to new replies."
 msgstr ""
 
 #: template/bbpress/form-reply.php:166 template/bbpress/form-topic.php:219
-#, php-format
 msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
 msgstr ""
 
@@ -319,7 +295,6 @@ msgid "Search forums ..."
 msgstr ""
 
 #: template/bbpress/form-topic-merge.php:19
-#, php-format
 msgid "Merge topic \"%s\""
 msgstr ""
 
@@ -331,16 +306,16 @@ msgstr ""
 
 #: template/bbpress/form-topic-merge.php:25
 msgid ""
-"To keep this topic as the lead, go to the other topic and use the merge tool "
-"from there instead."
+"To keep this topic as the lead, go to the other topic and use the merge "
+"tool from there instead."
 msgstr ""
 
 #: template/bbpress/form-topic-merge.php:29
 msgid ""
 "All replies within both topics will be merged chronologically. The order of "
 "the merged replies is based on the time and date they were posted. If the "
-"destination topic was created after this one, it's post date will be updated "
-"to second earlier than this one."
+"destination topic was created after this one, it's post date will be "
+"updated to second earlier than this one."
 msgstr ""
 
 #: template/bbpress/form-topic-merge.php:33
@@ -383,22 +358,21 @@ msgid "You cannot edit this topic."
 msgstr ""
 
 #: template/bbpress/form-topic-split.php:19
-#, php-format
 msgid "Split topic \"%s\""
 msgstr ""
 
 #: template/bbpress/form-topic-split.php:24
 msgid ""
 "When you split a topic, you are slicing it in half starting with the reply "
-"you just selected. Choose to use that reply as a new topic with a new title, "
-"or merge those replies into an existing topic."
+"you just selected. Choose to use that reply as a new topic with a new "
+"title, or merge those replies into an existing topic."
 msgstr ""
 
 #: template/bbpress/form-topic-split.php:28
 msgid ""
 "If you use the existing topic option, replies within both topics will be "
-"merged chronologically. The order of the merged replies is based on the time "
-"and date they were posted."
+"merged chronologically. The order of the merged replies is based on the "
+"time and date they were posted."
 msgstr ""
 
 #: template/bbpress/form-topic-split.php:32
@@ -406,7 +380,6 @@ msgid "Split Method"
 msgstr ""
 
 #: template/bbpress/form-topic-split.php:37
-#, php-format
 msgid "Split: %s"
 msgstr ""
 
@@ -423,7 +396,6 @@ msgid "Copy topic tags to the new topic"
 msgstr ""
 
 #: template/bbpress/form-topic-tag.php:16
-#, php-format
 msgid "Manage Tag: \"%s\""
 msgstr ""
 
@@ -437,8 +409,8 @@ msgstr ""
 
 #: template/bbpress/form-topic-tag.php:27
 msgid ""
-"Changing the slug affects its permalink. Any links to the old slug will stop "
-"working."
+"Changing the slug affects its permalink. Any links to the old slug will "
+"stop working."
 msgstr ""
 
 #: template/bbpress/form-topic-tag.php:33
@@ -467,9 +439,7 @@ msgid "Existing tag:"
 msgstr ""
 
 #: template/bbpress/form-topic-tag.php:71
-#, php-format
-msgid ""
-"Are you sure you want to merge the \"%s\" tag into the tag you specified?"
+msgid "Are you sure you want to merge the \"%s\" tag into the tag you specified?"
 msgstr ""
 
 #: template/bbpress/form-topic-tag.php:86
@@ -490,14 +460,12 @@ msgid "Any links to this tag will no longer function."
 msgstr ""
 
 #: template/bbpress/form-topic-tag.php:99
-#, php-format
 msgid ""
-"Are you sure you want to delete the \"%s\" tag? This is permanent and cannot "
-"be undone."
+"Are you sure you want to delete the \"%s\" tag? This is permanent and "
+"cannot be undone."
 msgstr ""
 
 #: template/bbpress/form-topic.php:45
-#, php-format
 msgid "Create New Topic in &ldquo;%s&rdquo;"
 msgstr ""
 
@@ -512,7 +480,6 @@ msgid ""
 msgstr ""
 
 #: template/bbpress/form-topic.php:71
-#, php-format
 msgid "Topic Title (%d Characters or Less)"
 msgstr ""
 
@@ -600,10 +567,9 @@ msgid "Email"
 msgstr ""
 
 #: template/bbpress/form-user-edit.php:105
-#, php-format
 msgid ""
-"There is a pending email address change to <code>%1$s</code>. <a href=\"%2$s"
-"\">Cancel</a>"
+"There is a pending email address change to <code>%1$s</code>. <a "
+"href=\"%2$s\">Cancel</a>"
 msgstr ""
 
 #: template/bbpress/form-user-edit.php:114
@@ -728,7 +694,6 @@ msgid "in reply to: "
 msgstr ""
 
 #: template/bbpress/loop-single-topic.php:58
-#, php-format
 msgid "<a href=\"%1$s\">%2$s</a>"
 msgstr ""
 
@@ -749,7 +714,6 @@ msgid "Poster"
 msgstr ""
 
 #: template/bbpress/user-details.php:21
-#, php-format
 msgid "%s's Topics Started"
 msgstr ""
 
@@ -758,7 +722,6 @@ msgid "Topics Started"
 msgstr ""
 
 #: template/bbpress/user-details.php:27
-#, php-format
 msgid "%s's Replies Created"
 msgstr ""
 
@@ -767,7 +730,6 @@ msgid "Replies Created"
 msgstr ""
 
 #: template/bbpress/user-details.php:34
-#, php-format
 msgid "%s's Favorites"
 msgstr ""
 
@@ -776,7 +738,6 @@ msgid "Favorites"
 msgstr ""
 
 #: template/bbpress/user-details.php:44
-#, php-format
 msgid "%s's Subscriptions"
 msgstr ""
 
@@ -785,7 +746,6 @@ msgid "Subscriptions"
 msgstr ""
 
 #: template/bbpress/user-details.php:51
-#, php-format
 msgid "Edit %s's Profile"
 msgstr ""
 
@@ -831,4 +791,26 @@ msgstr ""
 
 #: template/bbpress/user-topics-created.php:25
 msgid "This user has not created any topics."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Eighties Add-on - bbPress"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://eighties.me/add-ons/bbpress"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This add-on pairs the power and functionality of bbPress with the modern, "
+"sleek design of Eightes."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Justin Kopepasah"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://kopepasah.com"
 msgstr ""
