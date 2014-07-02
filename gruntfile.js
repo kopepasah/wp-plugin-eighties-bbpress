@@ -40,6 +40,7 @@ module.exports = function(grunt) {
 							'**',
 							'!.gitignore',
 							'!.DS_Store',
+							'!readme.md',
 							'!template/css/bbpress.less',
 							'!package.json',
 							'!gruntfile.js',
